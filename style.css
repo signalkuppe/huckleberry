@@ -41,14 +41,20 @@ main {
   padding: 64px 0;
 }
 
+.max-width-wrapper {
+  padding: 0 24px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
 .intro-chunk {
   max-width: 360px;
-  padding: 0 24px;
 }
 
 .card {
   background: white;
   border-bottom: 8px solid hsl(0, 0%, 40%);
+  margin: -24px;
   padding: 24px;
 }
 
@@ -60,20 +66,11 @@ h2 {
   font-size: 1.5rem;
   background-color: hsl(45deg, 100%, 50%);
   border-bottom: 8px solid hsl(45deg, 100%, 40%);
-  padding: 10px 20px;
   width: fit-content;
-  margin-left: -24px;
-  padding-left: 24px;
-  margin-top: -16px;
-}
-
-@media screen and (orientation: landscape) {
-  h2 {
-    margin-left: -32px;
-    padding-left: 32px;
-  }
-  .max-width-wrapper {
-    max-width: 700px;
-    margin: 0 auto;
-  }
+  margin-left: -32px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top: -8px;
 }
